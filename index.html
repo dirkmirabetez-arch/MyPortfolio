@@ -1,67 +1,422 @@
-
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dirk Henrich B. Mirabete | Portfolio 2026</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dirk Henrich B. Mirabete | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --pink: #555555;
+      --pink-light: #bdbdbd;
+      --pink-soft: rgba(238, 238, 238, 0.7);
+      --text: #3d3d3d;
+      --muted: #6f6f6f;
+      --bg: #ffffff;
+      --surface: #ffffff;
+      --heading: #222222;
+      --body-text: #2b2b2b;
+      --shadow: rgba(0, 0, 0, 0.12);
+      --hero-grad: linear-gradient(135deg, #9e9e9e 0%, #757575 50%, #4f4f4f 100%);
+      --hero-sub: #f0f0f0;
+      --dot: rgba(0, 0, 0, 0.12);
+      --flowers: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='386' height='260'%3E%3Cg fill='%23d9d9d9' stroke='%237a7a7a' stroke-width='1.2'%3E%3Ccircle cx='18.0' cy='18.1' r='3.4'/%3E%3Ccircle cx='21.7' cy='20.8' r='3.4'/%3E%3Ccircle cx='20.3' cy='25.1' r='3.4'/%3E%3Ccircle cx='15.7' cy='25.1' r='3.4'/%3E%3Ccircle cx='14.3' cy='20.8' r='3.4'/%3E%3C/g%3E%3Ccircle cx='18' cy='22' r='2.0' fill='%237a7a7a' opacity='.35'/%3E%3Cg fill='%23bfbfbf' stroke='%237a7a7a' stroke-width='1.2'%3E%3Ccircle cx='118.0' cy='4.5' r='4.8'/%3E%3Ccircle cx='123.2' cy='8.3' r='4.8'/%3E%3Ccircle cx='121.2' cy='14.4' r='4.8'/%3E%3Ccircle cx='114.8' cy='14.4' r='4.8'/%3E%3Ccircle cx='112.8' cy='8.3' r='4.8'/%3E%3C/g%3E%3Ccircle cx='118' cy='10' r='2.8' fill='%237a7a7a' opacity='.35'/%3E%3Cg fill='%23ececec' stroke='%237a7a7a' stroke-width='1.2'%3E%3Ccircle cx='300.0' cy='28.1' r='3.4'/%3E%3Ccircle cx='303.7' cy='30.8' r='3.4'/%3E%3Ccircle cx='302.3' cy='35.1' r='3.4'/%3E%3Ccircle cx='297.7' cy='35.1' r='3.4'/%3E%3Ccircle cx='296.3' cy='30.8' r='3.4'/%3E%3C/g%3E%3Ccircle cx='300' cy='32' r='2.0' fill='%237a7a7a' opacity='.35'/%3E%3Cg fill='%23a6a6a6' stroke='%237a7a7a' stroke-width='1.2'%3E%3Ccircle cx='374.0' cy='66.5' r='4.8'/%3E%3Ccircle cx='379.2' cy='70.3' r='4.8'/%3E%3Ccircle cx='377.2' cy='76.4' r='4.8'/%3E%3Ccircle cx='370.8' cy='76.4' r='4.8'/%3E%3Ccircle cx='368.8' cy='70.3' r='4.8'/%3E%3C/g%3E%3Ccircle cx='374' cy='72' r='2.8' fill='%237a7a7a' opacity='.35'/%3E%3Cg fill='%23d9d9d9' stroke='%237a7a7a' stroke-width='1.2'%3E%3Ccircle cx='172.0' cy='80.7' r='2.9'/%3E%3Ccircle cx='175.1' cy='83.0' r='2.9'/%3E%3Ccircle cx='173.9' cy='86.7' r='2.9'/%3E%3Ccircle cx='170.1' cy='86.7' r='2.9'/%3E%3Ccircle cx='168.9' cy='83.0' r='2.9'/%3E%3C/g%3E%3Ccircle cx='172' cy='84' r='1.7' fill='%237a7a7a' opacity='.35'/%3E%3Cg fill='%23bfbfbf' stroke='%237a7a7a' stroke-width='1.2'%3E%3Ccircle cx='10.0' cy='109.5' r='4.8'/%3E%3Ccircle cx='15.2' cy='113.3' r='4.8'/%3E%3Ccircle cx='13.2' cy='119.4' r='4.8'/%3E%3Ccircle cx='6.8' cy='119.4' r='4.8'/%3E%3Ccircle cx='4.8' cy='113.3' r='4.8'/%3E%3C/g%3E%3Ccircle cx='10' cy='115' r='2.8' fill='%237a7a7a' opacity='.35'/%3E%3Cg fill='%23ececec' stroke='%237a7a7a' stroke-width='1.2'%3E%3Ccircle cx='250.0' cy='127.5' r='4.8'/%3E%3Ccircle cx='255.2' cy='131.3' r='4.8'/%3E%3Ccircle cx='253.2' cy='137.4' r='4.8'/%3E%3Ccircle cx='246.8' cy='137.4' r='4.8'/%3E%3Ccircle cx='244.8' cy='131.3' r='4.8'/%3E%3C/g%3E%3Ccircle cx='250' cy='133' r='2.8' fill='%237a7a7a' opacity='.35'/%3E%3Cg fill='%23a6a6a6' stroke='%237a7a7a' stroke-width='1.2'%3E%3Ccircle cx='64.0' cy='156.7' r='2.9'/%3E%3Ccircle cx='67.1' cy='159.0' r='2.9'/%3E%3Ccircle cx='65.9' cy='162.7' r='2.9'/%3E%3Ccircle cx='62.1' cy='162.7' r='2.9'/%3E%3Ccircle cx='60.9' cy='159.0' r='2.9'/%3E%3C/g%3E%3Ccircle cx='64' cy='160' r='1.7' fill='%237a7a7a' opacity='.35'/%3E%3Cg fill='%23d9d9d9' stroke='%237a7a7a' stroke-width='1.2'%3E%3Ccircle cx='344.0' cy='154.7' r='2.9'/%3E%3Ccircle cx='347.1' cy='157.0' r='2.9'/%3E%3Ccircle cx='345.9' cy='160.7' r='2.9'/%3E%3Ccircle cx='342.1' cy='160.7' r='2.9'/%3E%3Ccircle cx='340.9' cy='157.0' r='2.9'/%3E%3C/g%3E%3Ccircle cx='344' cy='158' r='1.7' fill='%237a7a7a' opacity='.35'/%3E%3Cg fill='%23bfbfbf' stroke='%237a7a7a' stroke-width='1.2'%3E%3Ccircle cx='152.0' cy='192.5' r='4.8'/%3E%3Ccircle cx='157.2' cy='196.3' r='4.8'/%3E%3Ccircle cx='155.2' cy='202.4' r='4.8'/%3E%3Ccircle cx='148.8' cy='202.4' r='4.8'/%3E%3Ccircle cx='146.8' cy='196.3' r='4.8'/%3E%3C/g%3E%3Ccircle cx='152' cy='198' r='2.8' fill='%237a7a7a' opacity='.35'/%3E%3Cg fill='%23ececec' stroke='%237a7a7a' stroke-width='1.2'%3E%3Ccircle cx='342.0' cy='193.1' r='4.3'/%3E%3Ccircle cx='346.7' cy='196.5' r='4.3'/%3E%3Ccircle cx='344.9' cy='202.0' r='4.3'/%3E%3Ccircle cx='339.1' cy='202.0' r='4.3'/%3E%3Ccircle cx='337.3' cy='196.5' r='4.3'/%3E%3C/g%3E%3Ccircle cx='342' cy='198' r='2.5' fill='%237a7a7a' opacity='.35'/%3E%3Cg fill='%23a6a6a6' stroke='%237a7a7a' stroke-width='1.2'%3E%3Ccircle cx='118.0' cy='232.2' r='3.4'/%3E%3Ccircle cx='121.7' cy='234.8' r='3.4'/%3E%3Ccircle cx='120.3' cy='239.1' r='3.4'/%3E%3Ccircle cx='115.7' cy='239.1' r='3.4'/%3E%3Ccircle cx='114.3' cy='234.8' r='3.4'/%3E%3C/g%3E%3Ccircle cx='118' cy='236' r='2.0' fill='%237a7a7a' opacity='.35'/%3E%3Cg fill='%23d9d9d9' stroke='%237a7a7a' stroke-width='1.2'%3E%3Ccircle cx='230.0' cy='246.7' r='2.9'/%3E%3Ccircle cx='233.1' cy='249.0' r='2.9'/%3E%3Ccircle cx='231.9' cy='252.7' r='2.9'/%3E%3Ccircle cx='228.1' cy='252.7' r='2.9'/%3E%3Ccircle cx='226.9' cy='249.0' r='2.9'/%3E%3C/g%3E%3Ccircle cx='230' cy='250' r='1.7' fill='%237a7a7a' opacity='.35'/%3E%3C/svg%3E");
+    }
+
+    body.dark {
+      --pink: #e0e0e0;
+      --pink-light: #757575;
+      --pink-soft: rgba(30, 30, 30, 0.75);
+      --text: #e6e6e6;
+      --muted: #a8a8a8;
+      --bg: #121212;
+      --surface: #2a2a2a;
+      --heading: #f2f2f2;
+      --body-text: #dddddd;
+      --shadow: rgba(0, 0, 0, 0.5);
+      --hero-grad: linear-gradient(135deg, #3a3a3a 0%, #2c2c2c 50%, #1c1c1c 100%);
+      --hero-sub: #cfcfcf;
+      --dot: rgba(255, 255, 255, 0.1);
+      --flowers: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='386' height='260'%3E%3Cg fill='%233a3a3a' stroke='%238a8a8a' stroke-width='1.2'%3E%3Ccircle cx='18.0' cy='18.1' r='3.4'/%3E%3Ccircle cx='21.7' cy='20.8' r='3.4'/%3E%3Ccircle cx='20.3' cy='25.1' r='3.4'/%3E%3Ccircle cx='15.7' cy='25.1' r='3.4'/%3E%3Ccircle cx='14.3' cy='20.8' r='3.4'/%3E%3C/g%3E%3Ccircle cx='18' cy='22' r='2.0' fill='%238a8a8a' opacity='.35'/%3E%3Cg fill='%234a4a4a' stroke='%238a8a8a' stroke-width='1.2'%3E%3Ccircle cx='118.0' cy='4.5' r='4.8'/%3E%3Ccircle cx='123.2' cy='8.3' r='4.8'/%3E%3Ccircle cx='121.2' cy='14.4' r='4.8'/%3E%3Ccircle cx='114.8' cy='14.4' r='4.8'/%3E%3Ccircle cx='112.8' cy='8.3' r='4.8'/%3E%3C/g%3E%3Ccircle cx='118' cy='10' r='2.8' fill='%238a8a8a' opacity='.35'/%3E%3Cg fill='%232e2e2e' stroke='%238a8a8a' stroke-width='1.2'%3E%3Ccircle cx='300.0' cy='28.1' r='3.4'/%3E%3Ccircle cx='303.7' cy='30.8' r='3.4'/%3E%3Ccircle cx='302.3' cy='35.1' r='3.4'/%3E%3Ccircle cx='297.7' cy='35.1' r='3.4'/%3E%3Ccircle cx='296.3' cy='30.8' r='3.4'/%3E%3C/g%3E%3Ccircle cx='300' cy='32' r='2.0' fill='%238a8a8a' opacity='.35'/%3E%3Cg fill='%23555' stroke='%238a8a8a' stroke-width='1.2'%3E%3Ccircle cx='374.0' cy='66.5' r='4.8'/%3E%3Ccircle cx='379.2' cy='70.3' r='4.8'/%3E%3Ccircle cx='377.2' cy='76.4' r='4.8'/%3E%3Ccircle cx='370.8' cy='76.4' r='4.8'/%3E%3Ccircle cx='368.8' cy='70.3' r='4.8'/%3E%3C/g%3E%3Ccircle cx='374' cy='72' r='2.8' fill='%238a8a8a' opacity='.35'/%3E%3Cg fill='%233a3a3a' stroke='%238a8a8a' stroke-width='1.2'%3E%3Ccircle cx='172.0' cy='80.7' r='2.9'/%3E%3Ccircle cx='175.1' cy='83.0' r='2.9'/%3E%3Ccircle cx='173.9' cy='86.7' r='2.9'/%3E%3Ccircle cx='170.1' cy='86.7' r='2.9'/%3E%3Ccircle cx='168.9' cy='83.0' r='2.9'/%3E%3C/g%3E%3Ccircle cx='172' cy='84' r='1.7' fill='%238a8a8a' opacity='.35'/%3E%3Cg fill='%234a4a4a' stroke='%238a8a8a' stroke-width='1.2'%3E%3Ccircle cx='10.0' cy='109.5' r='4.8'/%3E%3Ccircle cx='15.2' cy='113.3' r='4.8'/%3E%3Ccircle cx='13.2' cy='119.4' r='4.8'/%3E%3Ccircle cx='6.8' cy='119.4' r='4.8'/%3E%3Ccircle cx='4.8' cy='113.3' r='4.8'/%3E%3C/g%3E%3Ccircle cx='10' cy='115' r='2.8' fill='%238a8a8a' opacity='.35'/%3E%3Cg fill='%232e2e2e' stroke='%238a8a8a' stroke-width='1.2'%3E%3Ccircle cx='250.0' cy='127.5' r='4.8'/%3E%3Ccircle cx='255.2' cy='131.3' r='4.8'/%3E%3Ccircle cx='253.2' cy='137.4' r='4.8'/%3E%3Ccircle cx='246.8' cy='137.4' r='4.8'/%3E%3Ccircle cx='244.8' cy='131.3' r='4.8'/%3E%3C/g%3E%3Ccircle cx='250' cy='133' r='2.8' fill='%238a8a8a' opacity='.35'/%3E%3Cg fill='%23555' stroke='%238a8a8a' stroke-width='1.2'%3E%3Ccircle cx='64.0' cy='156.7' r='2.9'/%3E%3Ccircle cx='67.1' cy='159.0' r='2.9'/%3E%3Ccircle cx='65.9' cy='162.7' r='2.9'/%3E%3Ccircle cx='62.1' cy='162.7' r='2.9'/%3E%3Ccircle cx='60.9' cy='159.0' r='2.9'/%3E%3C/g%3E%3Ccircle cx='64' cy='160' r='1.7' fill='%238a8a8a' opacity='.35'/%3E%3Cg fill='%233a3a3a' stroke='%238a8a8a' stroke-width='1.2'%3E%3Ccircle cx='344.0' cy='154.7' r='2.9'/%3E%3Ccircle cx='347.1' cy='157.0' r='2.9'/%3E%3Ccircle cx='345.9' cy='160.7' r='2.9'/%3E%3Ccircle cx='342.1' cy='160.7' r='2.9'/%3E%3Ccircle cx='340.9' cy='157.0' r='2.9'/%3E%3C/g%3E%3Ccircle cx='344' cy='158' r='1.7' fill='%238a8a8a' opacity='.35'/%3E%3Cg fill='%234a4a4a' stroke='%238a8a8a' stroke-width='1.2'%3E%3Ccircle cx='152.0' cy='192.5' r='4.8'/%3E%3Ccircle cx='157.2' cy='196.3' r='4.8'/%3E%3Ccircle cx='155.2' cy='202.4' r='4.8'/%3E%3Ccircle cx='148.8' cy='202.4' r='4.8'/%3E%3Ccircle cx='146.8' cy='196.3' r='4.8'/%3E%3C/g%3E%3Ccircle cx='152' cy='198' r='2.8' fill='%238a8a8a' opacity='.35'/%3E%3Cg fill='%232e2e2e' stroke='%238a8a8a' stroke-width='1.2'%3E%3Ccircle cx='342.0' cy='193.1' r='4.3'/%3E%3Ccircle cx='346.7' cy='196.5' r='4.3'/%3E%3Ccircle cx='344.9' cy='202.0' r='4.3'/%3E%3Ccircle cx='339.1' cy='202.0' r='4.3'/%3E%3Ccircle cx='337.3' cy='196.5' r='4.3'/%3E%3C/g%3E%3Ccircle cx='342' cy='198' r='2.5' fill='%238a8a8a' opacity='.35'/%3E%3Cg fill='%23555' stroke='%238a8a8a' stroke-width='1.2'%3E%3Ccircle cx='118.0' cy='232.2' r='3.4'/%3E%3Ccircle cx='121.7' cy='234.8' r='3.4'/%3E%3Ccircle cx='120.3' cy='239.1' r='3.4'/%3E%3Ccircle cx='115.7' cy='239.1' r='3.4'/%3E%3Ccircle cx='114.3' cy='234.8' r='3.4'/%3E%3C/g%3E%3Ccircle cx='118' cy='236' r='2.0' fill='%238a8a8a' opacity='.35'/%3E%3Cg fill='%233a3a3a' stroke='%238a8a8a' stroke-width='1.2'%3E%3Ccircle cx='230.0' cy='246.7' r='2.9'/%3E%3Ccircle cx='233.1' cy='249.0' r='2.9'/%3E%3Ccircle cx='231.9' cy='252.7' r='2.9'/%3E%3Ccircle cx='228.1' cy='252.7' r='2.9'/%3E%3Ccircle cx='226.9' cy='249.0' r='2.9'/%3E%3C/g%3E%3Ccircle cx='230' cy='250' r='1.7' fill='%238a8a8a' opacity='.35'/%3E%3C/svg%3E");
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background-color: var(--bg);
+      /* scattered flowers + dot grid */
+      background-image: var(--flowers), radial-gradient(var(--dot) 1px, transparent 1.4px);
+      background-size: 386px 260px, 22px 22px;
+      background-attachment: fixed;
+      line-height: 1.7;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    /* ---------- NAVBAR ---------- */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--surface);
+      box-shadow: 0 2px 10px var(--shadow);
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 98px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo { display: flex; align-items: center; }
+    .nav-logo img { height: 84px; width: auto; display: block; }
+    body.dark .nav-logo img { filter: invert(1); }
+
+    .nav ul { list-style: none; display: flex; align-items: center; gap: 48px; }
+
+    .nav a.link {
+      text-decoration: none;
+      color: var(--heading);
+      font-size: 1rem;
+      transition: color 0.2s;
+    }
+    .nav a.link:hover { color: var(--pink); }
+
+    .theme-btn {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      border: 1px solid var(--pink-light);
+      background: var(--surface);
+      box-shadow: 0 2px 8px var(--shadow);
+      font-size: 1.3rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.2s, background 0.3s;
+    }
+    .theme-btn:hover { transform: scale(1.08); }
+
+    .menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.8rem;
+      color: var(--pink);
+      cursor: pointer;
+    }
+
+    /* ---------- HERO ---------- */
+    .hero {
+      min-height: 548px;
+      display: flex;
+      align-items: center;
+      padding: 60px 24px;
+    }
+
+    .hero-inner {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding-left: 40px;
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: "Space Mono", monospace;
+      font-size: 0.85rem;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 30px;
+      height: 1px;
+      background: var(--muted);
+    }
+
+    .hero h1 {
+      font-family: "Anton", "Impact", sans-serif;
+      font-weight: 400;
+      font-size: clamp(3.4rem, 10vw, 7.5rem);
+      line-height: 0.95;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--heading);
+    }
+    .hero h1 .outline {
+      display: block;
+      color: var(--bg);
+      -webkit-text-stroke: 3px var(--heading);
+      text-shadow: 4px 4px 0 var(--pink-light);
+    }
+
+    .hero-sub {
+      margin-top: 28px;
+      font-family: "Space Mono", monospace;
+      font-weight: 700;
+      font-size: clamp(1.1rem, 3vw, 2rem);
+      letter-spacing: 6px;
+      color: var(--heading);
+    }
+
+    /* ---------- SECTIONS ---------- */
+    section { padding: 100px 24px; }
+
+    .container { max-width: 860px; margin: 0 auto; text-align: center; }
+
+    .section-title {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: var(--pink);
+      letter-spacing: 1px;
+    }
+
+    .section-line {
+      width: 70px;
+      height: 3px;
+      background: var(--pink-light);
+      border-radius: 3px;
+      margin: 18px auto 36px;
+    }
+
+    #about p { font-size: 1.1rem; color: var(--body-text); }
+
+    /* Skills */
+    #skills { background: var(--pink-soft); }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      justify-content: center;
+    }
+    .chip {
+      background: var(--surface);
+      color: var(--pink);
+      border: 2px solid var(--pink-light);
+      padding: 10px 24px;
+      border-radius: 999px;
+      font-weight: 600;
+      transition: transform 0.2s, background 0.2s, color 0.2s;
+    }
+    .chip:hover { transform: translateY(-4px); background: var(--pink); color: var(--bg); }
+
+    /* Portfolio */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 28px;
+      text-align: left;
+    }
+    .card {
+      background: var(--surface);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px var(--shadow);
+      transition: transform 0.25s;
+    }
+    .card:hover { transform: translateY(-8px); }
+    .card .thumb {
+      height: 150px;
+      background: var(--hero-grad);
+    }
+    .card .body { padding: 20px; }
+    .card h3 { color: var(--text); margin-bottom: 6px; }
+    .card p { font-size: 0.95rem; color: var(--muted); }
+
+    /* Contact */
+    #contact { background: var(--pink-soft); }
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--pink);
+      color: var(--bg);
+      padding: 12px 30px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .btn:hover { transform: translateY(-3px); box-shadow: 0 8px 18px var(--shadow); }
+
+    footer {
+      text-align: center;
+      padding: 28px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 860px) {
+      .nav { height: 76px; }
+      .nav-logo img { height: 64px; }
+      .menu-btn { display: block; }
+      .nav ul {
+        display: none;
+        position: absolute;
+        top: 76px; left: 0; right: 0;
+        flex-direction: column;
+        gap: 0;
+        background: var(--surface);
+        box-shadow: 0 6px 10px var(--shadow);
+      }
+      .nav ul.open { display: flex; }
+      .nav ul li { display: flex; justify-content: center; padding: 16px; }
+
+      .hero { min-height: 420px; }
+      .hero-inner { padding-left: 0; }
+      .hero h1 .outline { -webkit-text-stroke-width: 2px; }
+      .hero-sub { letter-spacing: 3px; }
+      section { padding: 70px 20px; }
+    }
+  </style>
 </head>
 <body>
-  <nav class="nav">
-    <div class="nav-links">
-      <a class="active" href="index.html">Home Page</a>
-      <a href="education.html">Educational Attainment</a>
-      <a href="achievements.html">Achievements</a>
-      <a href="family.html">My parent</a>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="nav">
+      <a class="nav-logo" href="#" aria-label="Back to top"><img src="images/moon.gif" alt="Crescent moon with clouds and stars"></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+      <ul id="menu">
+        <li><button class="theme-btn" id="themeBtn" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button></li>
+        <li><a class="link" href="#about">About Me</a></li>
+        <li><a class="link" href="#skills">Skills</a></li>
+        <li><a class="link" href="#portfolio">Portfolio</a></li>
+        <li><a class="link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero" id="home">
+    <div class="hero-inner">
+      <p class="eyebrow">Portfolio 2026</p>
+      <h1>Dirk Henrich <span class="outline">B. Mirabete</span></h1>
+      <p class="hero-sub">Computer Science Student</p>
     </div>
-    <button class="theme-toggle" aria-label="Toggle theme"></button>
-  </nav>
+  </div>
 
-  <main>
-    <section class="hero">
-      <div class="photo">
-        <img src="photo.jpg.jpg" alt="Dirk Henrich B. Mirabete" width="1254" height="1254">
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="section-line"></div>
+      <p>
+        I am a first-year college student majoring in Computer Science at the
+        University of the Cordilleras. My dream is to become a game creator and
+        use that success to help my family, especially my siblings. I want to
+        create games that every player enjoys, and I hope to become one of the
+        best game creators in the world. Above all, I want to make the gaming
+        experience more amazing for everyone who plays.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="section-line"></div>
+      <div class="chips">
+        <span class="chip">HTML</span>
+        <span class="chip">CSS</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">Python</span>
+        <span class="chip">Problem Solving</span>
+        <span class="chip">Game Design</span>
       </div>
-      <div>
-        <div class="eyebrow">Portfolio 2026</div>
-        <h1 class="name">Dirk Henrich<span class="outline">B. Mirabete</span></h1>
-        <div class="course">Computer Science Student</div>
-        <h2>Biography</h2>
-        <p class="sub">I am a first-year college student majoring in Computer Science at the University of the Cordilleras. My dream is to become a game creator and use that success to help my family, especially my siblings. I want to create games that every player enjoys, and I hope to become one of the best game creators in the world. Above all, I want to make the gaming experience more amazing for everyone who plays.</p>
+    </div>
+  </section>
 
-        <div class="contact">
-          <div class="eyebrow">Contact</div>
-          <div class="row">
-            <span class="label">Email</span>
-            <span class="value">dirkmirabetez@gmail.com</span>
-            <button class="copy" data-copy="dirkmirabetez@gmail.com">COPY</button>
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <div class="container">
+      <h2 class="section-title">Portfolio</h2>
+      <div class="section-line"></div>
+      <div class="grid">
+        <div class="card">
+          <div class="thumb"></div>
+          <div class="body">
+            <h3>Project One</h3>
+            <p>Short description of what you built and the tools you used.</p>
           </div>
-          <div class="row">
-            <span class="label">Phone</span>
-            <span class="value">09953884189</span>
-            <button class="copy" data-copy="09953884189">COPY</button>
+        </div>
+        <div class="card">
+          <div class="thumb"></div>
+          <div class="body">
+            <h3>Project Two</h3>
+            <p>Short description of what you built and the tools you used.</p>
           </div>
-          <div class="row">
-            <span class="label">Facebook</span>
-            <span class="value">Dirk Henrichi</span>
-            <button class="copy" data-copy="Dirk Henrichi">COPY</button>
+        </div>
+        <div class="card">
+          <div class="thumb"></div>
+          <div class="body">
+            <h3>Project Three</h3>
+            <p>Short description of what you built and the tools you used.</p>
           </div>
         </div>
       </div>
-    </section>
-    <div class="bigtext">DHM</div>
-  </main>
+    </div>
+  </section>
 
-  <div class="pager">
-    <a class="btn next" href="education.html">Next →</a>
-  </div>
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="section-line"></div>
+      <p style="margin-bottom: 28px;">Want to work together or just say hi? Reach out!</p>
+      <div class="contact-links">
+        <a class="btn" href="mailto:dirkmirabetez@gmail.com">Email: dirkmirabetez@gmail.com</a>
+        <a class="btn" href="tel:09953884189">Phone: 09953884189</a>
+        <span class="btn">Face: Dirk Henrichi</span>
+      </div>
+    </div>
+  </section>
 
-  <footer>
-    <span>© 2026 Dirk Henrich B. Mirabete</span>
-    <span>Made with HTML, CSS and JavaScript</span>
-  </footer>
+  <footer>© 2026 Dirk Henrich B. Mirabete. All rights reserved.</footer>
 
-  <script src="script.js"></script>
+  <script>
+    // Mobile menu toggle
+    const btn = document.getElementById("menuBtn");
+    const menu = document.getElementById("menu");
+    btn.addEventListener("click", () => menu.classList.toggle("open"));
+    menu.querySelectorAll("a").forEach(a =>
+      a.addEventListener("click", () => menu.classList.remove("open"))
+    );
+
+    // Dark / light mode toggle
+    const themeBtn = document.getElementById("themeBtn");
+    const applyTheme = dark => {
+      document.body.classList.toggle("dark", dark);
+      themeBtn.textContent = dark ? "☀️" : "🌙";
+    };
+    applyTheme(localStorage.getItem("theme") === "dark");
+    themeBtn.addEventListener("click", () => {
+      const dark = !document.body.classList.contains("dark");
+      applyTheme(dark);
+      localStorage.setItem("theme", dark ? "dark" : "light");
+    });
+  </script>
 </body>
 </html>
